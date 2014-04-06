@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.1//EN"  "http://tuckey.org/res/dtds/urlrewrite3.1.dtd">  
+<urlrewrite>
+
+
+	
+	<rule>  
+		<note> 跳转注册页面 </note>
+		<from>^/easywine_sign_in_(\w+).html$</from>
+		<to>/tosignin.do?menuId=$1</to>
+	</rule> 	
+	<rule>  
+		<note> 瓶酒笔记 元素详细信息页面 </note>
+		<from>^/note_item_detail_(\w+)_(\w+).html$</from>
+		<to>/note/noteItemdetail.do?noteId=$1&amp;itemId=$2</to>
+	</rule> 	
+	<rule>  
+		<note> 瓶酒笔记 元素列表 </note>
+		<from>^/testing_note_items_(\w+).html$</from>
+		<to>/note/noteItemsList.do?noteId=$1</to>
+	</rule> 	
+	<rule>  
+		<note> 选择 香味 </note>
+		<from>^/wine_tasting_note_selectRelish.html$</from>
+		<to>/note/selectRelish.do</to>
+	</rule> 	
+	<rule>  
+		<note> 选择 颜色 </note>
+		<from>^/wine_tasting_note_selectColour.html$</from>
+		<to>/note/selectColour.do</to>
+	</rule> 	
+	<rule>  
+		<note> 选择 品种 </note>
+		<from>^/wine_tasting_note_selectGrape.html$</from>
+		<to>/note/selectGrape.do</to>
+	</rule> 	
+	<rule>  
+		<note> 选择生产厂商 </note>
+		<from>^/wine_tasting_note_selectManufacturer.html$</from>
+		<to>/note/selectManufacturer.do</to>
+	</rule> 	
+	<rule>  
+		<note> 选择 国家/地区 </note>
+		<from>^/wine_tasting_note_selectArea.html$</from>
+		<to>/note/selectArea.do</to>
+	</rule> 	
+	<rule>  
+		<note> 添加 啤酒笔记item </note>
+		<from>^/wine_tasting_note_item_add_(\w+).html$</from>
+		<to>/note/addNoteItem.do?noteId=$1</to>
+	</rule> 	
+	<rule>  
+		<note> 添加 品酒笔记 </note>
+		<from>^/wine_tasting_note_add.html$</from>
+		<to>/note/addNote.do</to>
+	</rule> 	
+	<rule>  
+		<note> 展示 瓶酒笔记页面 </note>
+		<from>^/main_note_(\w+).html$</from>
+		<to>/note/main_note.do?menuId=$1</to>
+	</rule> 	
+</urlrewrite> 
