@@ -9,4 +9,6 @@ package com.cedarera.base.entity;
  */
 public abstract class Base {
 
+	
+	
 }
